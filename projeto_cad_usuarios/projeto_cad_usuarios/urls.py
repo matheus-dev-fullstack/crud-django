@@ -8,4 +8,5 @@ urlpatterns = [
     #path é o que vem depois da raiz do projeto depois do /
     #path vaio é página inicial
     path('', views.home, name='home'),
+    path('usuarios/',views.usuarios, name='listagem_usuarios'),
 ]
