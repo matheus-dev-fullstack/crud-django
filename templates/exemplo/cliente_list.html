@@ -11,6 +11,7 @@
     </head>
     <body>
         <h1>Lista de clientes</h1>
+        <input type='submit' value='Adicionar usuário' onclick="location.href = '{% url 'exemplo:create' %}'">
         <ul>
             {% for cliente in object_list %}
                 <li>{{ cliente.nome }} </li>
